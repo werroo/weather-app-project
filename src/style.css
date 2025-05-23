@@ -1,0 +1,14 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Montserrat", sans-serif;
+  color: #ffff;
+}
+
+.weather-app {
+  background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  box-shadow: 0 30px 50px #41326414;
+  border-radius: 15px;
+}
