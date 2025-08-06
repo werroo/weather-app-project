@@ -15,7 +15,8 @@
   </head>
   <body>
     <div class="weather-app">
-      <header>
+      <header class="header-container">
+        <img src="images/weather-logo.png" />
         <form class="search-form" id="search-form">
           <input
             type="search"
@@ -31,17 +32,18 @@
         <div class="weather-app-data">
           <div>
             <h1 class="weather-app-city" id="city"></h1>
-            <p class="weather-app-details">
-              <span id="time"></span>, <span id="description"></span>
+            <div class="time" id="time"></div>
+            <div class="weather-app-temp-container">
+              <div id="icon"></div>
+              <div class="weather-app-temperature" id="temperature"></div>
+              <div class="weather-app-unit">°C</div>
+            </div>
+            <p>
+              Condition: <span class="temp-description" id="description"></span>
               <br />
-              Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind-speed"></strong>
+              Humidity: <strong class="humidity" id="humidity"></strong>, Wind:
+              <strong class="wind-speed" id="wind-speed"></strong>
             </p>
-          </div>
-          <div class="weather-app-temp-container">
-            <div id="icon"></div>
-            <div class="weather-app-temperature" id="temperature"></div>
-            <div class="weather-app-unit">°C</div>
           </div>
         </div>
         <div class="weather-forecast" id="forecast"></div>
